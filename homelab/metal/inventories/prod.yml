@@ -1,0 +1,10 @@
+metal:
+  children:
+    masters:
+      hosts:
+        test0: {ansible_host: 192.168.1.97, mac: '8E:05:D7:15:3E:2F', disk: sda, network_interface: net0}
+        test1: {ansible_host: 192.168.1.159, mac: 'BE:87:3D:89:D3:27', disk: sda, network_interface: net0}
+        test2: {ansible_host: 192.168.1.63, mac: 'BE:43:52:F9:73:B0', disk: sda, network_interface: net0}
+    workers:
+      hosts:
+        test3: {ansible_host: 192.168.1.210, mac: '0E:EF:28:5D:B7:30', disk: sda, network_interface: net0}
