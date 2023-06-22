@@ -13,14 +13,20 @@ import sys
 
 from rich.prompt import Confirm, Prompt
 
+# upstream_config = {
+#     "seed_repo": "https://github.com/khuedoan/homelab",
+#     "domain": "khuedoan.com",
+#     "timezone": "Asia/Ho_Chi_Minh",
+#     "terraform_workspace": "khuedoan",
+#     "loadbalancer_ip_range": "192.168.1.224/27",
+# }
 upstream_config = {
-    "seed_repo": "https://github.com/khuedoan/homelab",
-    "domain": "khuedoan.com",
-    "timezone": "Asia/Ho_Chi_Minh",
-    "terraform_workspace": "khuedoan",
+    "seed_repo": "https://github.com/garetor/homelab",
+    "domain": "pando.mobi",
+    "timezone": "Australia/Melbourne",
+    "terraform_workspace": "pando",
     "loadbalancer_ip_range": "192.168.1.224/27",
 }
-
 
 def check_python_version(required_version: str) -> None:
     if sys.version_info < tuple(map(int, required_version.split('.'))):
